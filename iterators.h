@@ -50,5 +50,11 @@ void print(Container &container, ostream &os)
 	auto begin = container.begin();
 	while (begin != container.end())
 		os << *begin << endl;
+{	
+	template <typename Iterator, typename OF>
+void recorrer5(Iterator begin, Iterator end, OF &of)
+{
+	while (begin != end)
+		of(*of);
 }
 #endif // Agregado por Kevin De Lama
